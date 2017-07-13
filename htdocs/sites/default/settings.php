@@ -295,7 +295,7 @@ $config_directories = array();
  *   $settings['hash_salt'] = file_get_contents('/home/example/salt.txt');
  * @endcode
  */
-$settings['hash_salt'] = 'V6Tap5ECI69iTVYMLgTpQHXwIxrKYgMkFkOJpMKHp-DzFB3Ag2Peb9iSfjfoyaMOI-OfHlk3Cw';
+$settings['hash_salt'] = 'eBSNgd7cINaLUNvBJ8YCzEhVQmmXQx5GCl3UL3xFfYUccPxOA4hQhC6xbyDW7qgoJMoAb9cX7w';
 
 /**
  * Deployment identifier.
@@ -764,14 +764,17 @@ $settings['file_scan_ignore_directories'] = [
 #   include $app_root . '/' . $site_path . '/settings.local.php';
 # }
 $databases['default']['default'] = array (
-  'database' => 'd8eni',
+  'database' => 'd8eni_dev',
   'username' => 'root',
   'password' => 'poivrine',
   'prefix' => '',
   'host' => 'localhost',
-  'port' => '22',
+  'port' => '3306',
   'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
   'driver' => 'mysql',
 );
 $settings['install_profile'] = 'standard';
-$config_directories['sync'] = 'sites/default/files/config__qunC4DzgvGoiIgT7Gm68lRvxfg4A9tO_UTZOp20G4wPtZUloKlxNkkVLwhfBcTsnklMPmwEfQ/sync';
+$config_directories['sync'] = 'sites/default/files/config_hckYeToWntawbafAzAVmuwO7bPD8hBLn4g0Xb1oO2f1AUAbqppJXyUi6m32EpJziMSkaysh5KA/sync';
+$settings['trusted_host_patterns'] = [
+  '^d8eni\.vm$',
+];
