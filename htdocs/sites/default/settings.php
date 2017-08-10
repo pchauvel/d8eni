@@ -250,7 +250,10 @@
  * @endcode
  */
 $config_directories = array();
-
+/*$config_directories = array(
+      CONFIG_SYNC_DIRECTORY => '../config/sync',
+    );
+*/
 /**
  * Settings:
  *
@@ -775,6 +778,4 @@ $databases['default']['default'] = array (
 );
 $settings['install_profile'] = 'standard';
 $config_directories['sync'] = 'sites/default/files/config_hckYeToWntawbafAzAVmuwO7bPD8hBLn4g0Xb1oO2f1AUAbqppJXyUi6m32EpJziMSkaysh5KA/sync';
-$settings['trusted_host_patterns'] = [
-  '^d8eni\.vm$',
-];
+
