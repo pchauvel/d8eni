@@ -1,0 +1,21 @@
+uuid: 34568c3e-5413-433b-b512-e01660b922ff
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tags
+    - node.type.actualite
+id: node.actualite.field_tags
+field_name: field_tags
+entity_type: node
+bundle: actualite
+label: Étiquettes
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings: {  }
+field_type: entity_reference
